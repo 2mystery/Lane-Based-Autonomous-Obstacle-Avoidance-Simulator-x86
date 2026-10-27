@@ -4,8 +4,8 @@
 Hankuk University of Foreign Studies
 
 ## 1. Project Overview
-![Simulation Screen](docs/screenshots/Basic execution screen.png)
-![More Screen](docs/screenshots/more executioin screen.png)
+![Simulation Screen](docs/screenshots/screen.png)
+![More Screen](docs/screenshots/screen2.png)
 
 This project implements a **2D autonomous obstacle avoidance simulator using x86 Assembly Language** in a 16-bit DOS environment.
 
