@@ -63,11 +63,8 @@ Lane-Based-Autonomous-Obstacle-Avoidance-Simulator-x86/
 │
 ├── docs/
 │   ├── screenshots/
-│   ├── report/
-│   └── demo_video/
-│
-├── references/
-│   └── references.md
+│   ├── Lane-Based Autonomous Obstacle Avoidance Simulator.pdf
+│   └── demo.mp4
 │
 └── README.md
 ```
@@ -93,10 +90,8 @@ Lane-Based-Autonomous-Obstacle-Avoidance-Simulator-x86/
 
 ---
 
-## <Author>
+## Author
 
 **Lee Shinbi**
 
-Department of Computer Engineering
-
-Hankuk University of Foreign Studies
+Department of Computer Engineering, Hankuk University of Foreign Studies
