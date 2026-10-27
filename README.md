@@ -3,7 +3,9 @@
 **Computer Architecture Project | Spring 2026**  
 Hankuk University of Foreign Studies
 
-## Project Overview
+## 1. Project Overview
+![Simulation Screen](docs/screenshots/Basic execution screen.png)
+![More Screen](docs/screenshots/more executioin screen.png)
 
 This project implements a **2D autonomous obstacle avoidance simulator using x86 Assembly Language** in a 16-bit DOS environment.
 
@@ -11,7 +13,7 @@ The simulator features a three-lane road where a vehicle automatically avoids mo
 
 The project demonstrates how low-level computer architecture concepts can be applied to an interactive graphics-based simulation.
 
-## Features
+## 2. Features
 
 - Three-lane road environment with 2D graphics
 - **Risk-based autonomous lane selection and obstacle avoidance**
@@ -21,7 +23,7 @@ The project demonstrates how low-level computer architecture concepts can be app
 - Real-time HUD displaying score, HP, speed, target lane, and lane risks
 - Pause, reset, and game-over functionality
 
-## System Workflow
+## 3. System Workflow
 
 ```text
 Initialize Game
@@ -43,7 +45,7 @@ Update HUD & Render Screen
 
 The autonomous driving logic evaluates obstacle positions and assigns higher risk values to obstacles closer to the vehicle. The vehicle then moves one lane at a time toward the lane with the lowest risk.
 
-## Development Environment
+## 4. Development Environment
 
 | Component | Technology |
 |---|---|
@@ -53,7 +55,7 @@ The autonomous driving logic evaluates obstacle positions and assigns higher ris
 | Graphics | VGA Mode 13h (320×200, 256 colors) |
 | Architecture | Intel 8086 |
 
-## Controls
+## 5. Controls
 
 | Key | Function |
 |---|---|
@@ -62,7 +64,7 @@ The autonomous driving logic evaluates obstacle positions and assigns higher ris
 | `+` / `-` | Increase / Decrease speed |
 | `ESC` | Exit |
 
-## Project Structure
+## 6. Project(Directory, Repository) Structure
 
 ```text
 Lane-Based-Autonomous-Obstacle-Avoidance-Simulator-x86/
@@ -79,7 +81,7 @@ Lane-Based-Autonomous-Obstacle-Avoidance-Simulator-x86/
 └── README.md
 ```
 
-## How to Run
+## 7. How to Run
 
 1. Open `Lane_Auto_Obstacle_Simulator.asm` in EMU8086.
 2. Compile the source code and save the executable as `sim.exe`.
@@ -92,13 +94,7 @@ c:
 sim
 ```
 
-## Results
-
-The simulator was successfully compiled and executed in DOSBox.
-
-The implemented system demonstrates autonomous lane selection, obstacle avoidance, collision detection, speed adjustment, and real-time visualization of lane risk values.
-
-## References
+## 8. References
 
 - [Car-Racing-Game-x8086](https://github.com/Mahmoud-Khaled-Nasr/Car-Racing-Game-x8086)
 - [driving-car-asm](https://github.com/yousseftawakal/driving-car-asm)
