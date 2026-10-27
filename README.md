@@ -1,97 +1,112 @@
 # Lane-Based Autonomous Obstacle Avoidance Simulator using x86 Assembly Language
 
-### (Computer Architecture Project(Hankuk University of Foreign Studies, Spring 2026))
----
+**Computer Architecture Project | Spring 2026**  
+Hankuk University of Foreign Studies
 
-## 1. Project Overview
+## Project Overview
 
-This project implements a lane-based autonomous obstacle avoidance simulator using x86 Assembly Language.
+This project implements a **2D autonomous obstacle avoidance simulator using x86 Assembly Language** in a 16-bit DOS environment.
 
-The simulator demonstrates a simplified autonomous driving system in a text-based road environment. A vehicle travels along a three-lane road while obstacles continuously appear ahead. The system automatically detects obstacles in the current lane and performs lane-changing maneuvers to avoid collisions.
+The simulator features a three-lane road where a vehicle automatically avoids moving obstacles. Unlike conventional racing games, the vehicle calculates the risk level of each lane, selects the safest target lane, and changes lanes autonomously.
 
-The project was inspired by existing 8086 Assembly racing game implementations and was extended with an autonomous decision-making mechanism.
+The project demonstrates how low-level computer architecture concepts can be applied to an interactive graphics-based simulation.
 
----
+## Features
 
-## 2. Features
+- Three-lane road environment with 2D graphics
+- **Risk-based autonomous lane selection and obstacle avoidance**
+- Random obstacle generation and continuous movement
+- Collision detection and HP system
+- Score tracking and adjustable speed
+- Real-time HUD displaying score, HP, speed, target lane, and lane risks
+- Pause, reset, and game-over functionality
 
-* Three-lane road environment
-* Autonomous obstacle avoidance
-* Manual driving mode (A/D keys)
-* Obstacle generation and movement
-* Collision detection
-* Score tracking system
-* Game Over condition
-* Toggle between manual and autonomous driving modes
-
----
-
-## 3. System Workflow
+## System Workflow
 
 ```text
-Obstacle Generation
-        ↓
-Obstacle Detection
-        ↓
-Lane Evaluation
-        ↓
-Safe Lane Selection
-        ↓
-Automatic Lane Change
-        ↓
-Continue Driving
+Initialize Game
+       ↓
+Generate & Move Obstacles
+       ↓
+Calculate Lane Risks
+       ↓
+Select Safest Target Lane
+       ↓
+Autonomous Lane Change
+       ↓
+Collision Detection
+       ↓
+Update HUD & Render Screen
+       ↓
+    Repeat
 ```
 
----
+The autonomous driving logic evaluates obstacle positions and assigns higher risk values to obstacles closer to the vehicle. The vehicle then moves one lane at a time toward the lane with the lowest risk.
 
-## 4. Development Environment
+## Development Environment
 
-* x86 Assembly Language
-* EMU8086 / MASM-compatible Assembly
-* Visual Studio Code
-* DOS-based execution environment
+| Component | Technology |
+|---|---|
+| Language | x86 Assembly Language (16-bit) |
+| Assembler | EMU8086 |
+| Execution | DOSBox 0.74-3 |
+| Graphics | VGA Mode 13h (320×200, 256 colors) |
+| Architecture | Intel 8086 |
 
----
+## Controls
 
-## 5. Project Structure
+| Key | Function |
+|---|---|
+| `P` | Pause / Resume |
+| `R` | Restart |
+| `+` / `-` | Increase / Decrease speed |
+| `ESC` | Exit |
+
+## Project Structure
 
 ```text
 Lane-Based-Autonomous-Obstacle-Avoidance-Simulator-x86/
-
 ├── src/
-│   └── lane_auto_avoid.asm
-│
+│   └── Lane_Auto_Obstacle_Simulator.asm
+|
 ├── docs/
 │   ├── screenshots/
+│       ├── Basic execution screen.png
+│       └── more execution screen.png
 │   ├── Lane-Based Autonomous Obstacle Avoidance Simulator.pdf
 │   └── demo.mp4
-│
+|
 └── README.md
 ```
 
----
+## How to Run
 
-## 6. References
+1. Open `Lane_Auto_Obstacle_Simulator.asm` in EMU8086.
+2. Compile the source code and save the executable as `sim.exe`.
+3. Launch DOSBox and mount the directory containing `sim.exe`.
+4. Execute the program:
 
-1. 8086 Assembly Racing Game Reference
-   https://github.com/Mahmoud-Khaled-Nasr/Car-Racing-Game-x8086
+```dos
+mount c C:\dos
+c:
+sim
+```
 
-2. Assembly Driving Game Reference
-   https://github.com/yousseftawakal/driving-car-asm
+## Results
 
-3. NASM Official Documentation
-   https://www.nasm.us/docs.php
+The simulator was successfully compiled and executed in DOSBox.
 
-4. Visual Studio Code
-   https://code.visualstudio.com/
+The implemented system demonstrates autonomous lane selection, obstacle avoidance, collision detection, speed adjustment, and real-time visualization of lane risk values.
 
-5. 8086 Assembly Language Projects
-   https://github.com/yousefkotp/8086-Assembly-Projects
+## References
 
----
+- [Car-Racing-Game-x8086](https://github.com/Mahmoud-Khaled-Nasr/Car-Racing-Game-x8086)
+- [driving-car-asm](https://github.com/yousseftawakal/driving-car-asm)
+- [8086-Assembly-Projects](https://github.com/yousefkotp/8086-Assembly-Projects)
+- [NASM Documentation](https://www.nasm.us/docs.php)
 
 ## Author
 
-**Lee Shinbi**
-
-Department of Computer Engineering, Hankuk University of Foreign Studies
+**Lee Shinbi**  
+Department of Computer Engineering  
+Hankuk University of Foreign Studies
