@@ -2,7 +2,7 @@
 
 ### Computer Architecture Project(Hankuk University of Foreign Studies, Spring 2026)
 
-## Project Overview
+## 1. Project Overview
 
 This project implements a lane-based autonomous obstacle avoidance simulator using x86 Assembly Language.
 
@@ -12,7 +12,7 @@ The project was inspired by existing 8086 Assembly racing game implementations a
 
 ---
 
-## Features
+## 2. Features
 
 * Three-lane road environment
 * Autonomous obstacle avoidance
@@ -25,7 +25,7 @@ The project was inspired by existing 8086 Assembly racing game implementations a
 
 ---
 
-## System Workflow
+## 3. System Workflow
 
 ```text
 Obstacle Generation
@@ -43,7 +43,7 @@ Continue Driving
 
 ---
 
-## Development Environment
+## 4. Development Environment
 
 * x86 Assembly Language
 * EMU8086 / MASM-compatible Assembly
@@ -52,7 +52,7 @@ Continue Driving
 
 ---
 
-## Project Structure
+## 5. Project Structure
 
 ```text
 Lane-Based-Autonomous-Obstacle-Avoidance-Simulator-x86/
@@ -73,7 +73,7 @@ Lane-Based-Autonomous-Obstacle-Avoidance-Simulator-x86/
 
 ---
 
-## References
+## 6. References
 
 1. 8086 Assembly Racing Game Reference
    https://github.com/Mahmoud-Khaled-Nasr/Car-Racing-Game-x8086
@@ -92,17 +92,7 @@ Lane-Based-Autonomous-Obstacle-Avoidance-Simulator-x86/
 
 ---
 
-## Future Improvements
-
-* More sophisticated obstacle prediction
-* Multiple obstacle types
-* Variable vehicle speed
-* Dynamic difficulty adjustment
-* Enhanced graphics and animation
-
----
-
-## Author
+## <Author>
 
 **Lee Shinbi**
 
